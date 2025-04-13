@@ -1,0 +1,151 @@
+/* Global Body Styling */
+body {
+    font-family: 'Arial', sans-serif; /* Use a clean, modern font */
+    /* background-color: #f4f7fa; Light grey background */
+    color: #333; /* Dark text color for readability */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background: linear-gradient(135deg, rgba(245, 245, 245, 0.9), rgba(255, 255, 255, 0.9)); /* Smooth gradient background */
+    box-sizing: border-box;
+  }
+  
+  /* General Container Styling */
+  .container {
+    max-width: 100%;
+    padding: 16px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Card Styling with Subtle Animation */
+  .card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Header Styling */
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-in-out;
+    gap:5px;
+  }
+  
+  /* Input Fields Styling */
+  .input {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .input:focus {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+  }
+  
+  /* Button Styling */
+  .button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Grid Layout for Inputs */
+  .grid-cols-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  @media (max-width: 640px) {
+    .grid-cols-2 {
+      grid-template-columns: 1fr;
+    }
+  
+    .container {
+      padding: 12px;
+    }
+  }
+  
+  /* Smaller Screens (Mobile) */
+  @media (max-width: 480px) {
+    .input, .button {
+      padding: 12px;
+      font-size: 1rem;
+    }
+  
+    .card {
+      padding: 16px;
+    }
+  
+    h1 {
+      font-size: 1.6rem;
+    }
+  }
+  
+  /* Result Fade-In Animation */
+  .result {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Fade-In Effect */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Added background for the result section */
+  .card-content {
+    padding: 16px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  }
+  
