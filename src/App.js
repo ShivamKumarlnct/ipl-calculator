@@ -6,7 +6,7 @@ export default function IPLBetCalculator() {
   const [teamBName, setTeamBName] = useState("Team B");
   const [oddsA, setOddsA] = useState(1.75);
   const [oddsB, setOddsB] = useState(3.0);
-  const [betA, setBetA] = useState(500);
+  const [betA, setBetA] = useState(500);serve
   const [betB, setBetB] = useState(null);
   const [result, setResult] = useState(null);
 
